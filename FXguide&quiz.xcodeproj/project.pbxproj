@@ -8,17 +8,137 @@
 
 /* Begin PBXBuildFile section */
 		5B5BF3E02BD9A4F30098BA32 /* FXguide_quizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3DF2BD9A4F30098BA32 /* FXguide_quizApp.swift */; };
-		5B5BF3E22BD9A4F30098BA32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3E12BD9A4F30098BA32 /* ContentView.swift */; };
 		5B5BF3E42BD9A4F50098BA32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5BF3E32BD9A4F50098BA32 /* Assets.xcassets */; };
 		5B5BF3E72BD9A4F50098BA32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5BF3E62BD9A4F50098BA32 /* Preview Assets.xcassets */; };
+		5B5BF3F02BD9A5720098BA32 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3EE2BD9A5720098BA32 /* Color.swift */; };
+		5B5BF44A2BD9A5960098BA32 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3F12BD9A5960098BA32 /* CustomAlertView.swift */; };
+		5B5BF44C2BD9A5960098BA32 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3F32BD9A5960098BA32 /* ProgressBarView.swift */; };
+		5B5BF44D2BD9A5960098BA32 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3F42BD9A5960098BA32 /* ProgressLoadingView.swift */; };
+		5B5BF44F2BD9A5960098BA32 /* OnboardingBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3F82BD9A5960098BA32 /* OnboardingBackgroundView.swift */; };
+		5B5BF4502BD9A5960098BA32 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3FA2BD9A5960098BA32 /* OnboardingView.swift */; };
+		5B5BF4512BD9A5960098BA32 /* DemoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3FC2BD9A5960098BA32 /* DemoQuizView.swift */; };
+		5B5BF4522BD9A5960098BA32 /* DemoRateAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3FD2BD9A5960098BA32 /* DemoRateAppView.swift */; };
+		5B5BF4532BD9A5960098BA32 /* DemoStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3FE2BD9A5960098BA32 /* DemoStoriesView.swift */; };
+		5B5BF4542BD9A5960098BA32 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF3FF2BD9A5960098BA32 /* NotificationsView.swift */; };
+		5B5BF4552BD9A5960098BA32 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4002BD9A5960098BA32 /* WelcomeView.swift */; };
+		5B5BF4562BD9A5960098BA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5BF4032BD9A5960098BA32 /* LaunchScreen.storyboard */; };
+		5B5BF4572BD9A5960098BA32 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4052BD9A5960098BA32 /* LoadingView.swift */; };
+		5B5BF4582BD9A5960098BA32 /* DepNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4082BD9A5960098BA32 /* DepNowView.swift */; };
+		5B5BF4592BD9A5960098BA32 /* DepSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4092BD9A5960098BA32 /* DepSuccessView.swift */; };
+		5B5BF45A2BD9A5960098BA32 /* PushNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF40A2BD9A5960098BA32 /* PushNotificationView.swift */; };
+		5B5BF45B2BD9A5960098BA32 /* RegNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF40B2BD9A5960098BA32 /* RegNowView.swift */; };
+		5B5BF45C2BD9A5960098BA32 /* RegSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF40C2BD9A5960098BA32 /* RegSuccessView.swift */; };
+		5B5BF45F2BD9A5960098BA32 /* EighthInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4122BD9A5960098BA32 /* EighthInfoQuizView.swift */; };
+		5B5BF4602BD9A5960098BA32 /* EleventhInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4132BD9A5960098BA32 /* EleventhInfoQuizView.swift */; };
+		5B5BF4612BD9A5960098BA32 /* FifthInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4142BD9A5960098BA32 /* FifthInfoQuizView.swift */; };
+		5B5BF4622BD9A5960098BA32 /* FirstInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4152BD9A5960098BA32 /* FirstInfoQuizView.swift */; };
+		5B5BF4632BD9A5960098BA32 /* FourthInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4162BD9A5960098BA32 /* FourthInfoQuizView.swift */; };
+		5B5BF4642BD9A5960098BA32 /* NinthInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4172BD9A5960098BA32 /* NinthInfoQuizView.swift */; };
+		5B5BF4652BD9A5960098BA32 /* SecondInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4182BD9A5960098BA32 /* SecondInfoQuizView.swift */; };
+		5B5BF4662BD9A5960098BA32 /* SeventhInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4192BD9A5960098BA32 /* SeventhInfoQuizView.swift */; };
+		5B5BF4672BD9A5960098BA32 /* SixthInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF41A2BD9A5960098BA32 /* SixthInfoQuizView.swift */; };
+		5B5BF4682BD9A5960098BA32 /* TenthInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF41B2BD9A5960098BA32 /* TenthInfoQuizView.swift */; };
+		5B5BF4692BD9A5960098BA32 /* ThirdInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF41C2BD9A5960098BA32 /* ThirdInfoQuizView.swift */; };
+		5B5BF46A2BD9A5960098BA32 /* ThirteenthInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF41D2BD9A5960098BA32 /* ThirteenthInfoQuizView.swift */; };
+		5B5BF46B2BD9A5960098BA32 /* TwelfthInfoQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF41E2BD9A5960098BA32 /* TwelfthInfoQuizView.swift */; };
+		5B5BF46C2BD9A5960098BA32 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4202BD9A5960098BA32 /* QuizModel.swift */; };
+		5B5BF46D2BD9A5960098BA32 /* EighthQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4222BD9A5960098BA32 /* EighthQuizGameView.swift */; };
+		5B5BF46E2BD9A5960098BA32 /* EleventhQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4232BD9A5960098BA32 /* EleventhQuizGameView.swift */; };
+		5B5BF46F2BD9A5960098BA32 /* FifthQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4242BD9A5960098BA32 /* FifthQuizGameView.swift */; };
+		5B5BF4702BD9A5960098BA32 /* FirstQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4252BD9A5960098BA32 /* FirstQuizGameView.swift */; };
+		5B5BF4712BD9A5960098BA32 /* FourthQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4262BD9A5960098BA32 /* FourthQuizGameView.swift */; };
+		5B5BF4722BD9A5960098BA32 /* NinthQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4272BD9A5960098BA32 /* NinthQuizGameView.swift */; };
+		5B5BF4732BD9A5960098BA32 /* SecondQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4282BD9A5960098BA32 /* SecondQuizGameView.swift */; };
+		5B5BF4742BD9A5960098BA32 /* SeventhQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4292BD9A5960098BA32 /* SeventhQuizGameView.swift */; };
+		5B5BF4752BD9A5960098BA32 /* SixthQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF42A2BD9A5960098BA32 /* SixthQuizGameView.swift */; };
+		5B5BF4762BD9A5960098BA32 /* TenthQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF42B2BD9A5960098BA32 /* TenthQuizGameView.swift */; };
+		5B5BF4772BD9A5960098BA32 /* ThirdQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF42C2BD9A5960098BA32 /* ThirdQuizGameView.swift */; };
+		5B5BF4782BD9A5960098BA32 /* ThirteenthQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF42D2BD9A5960098BA32 /* ThirteenthQuizGameView.swift */; };
+		5B5BF4792BD9A5960098BA32 /* TwelfthQuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF42E2BD9A5960098BA32 /* TwelfthQuizGameView.swift */; };
+		5B5BF47A2BD9A5960098BA32 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4302BD9A5960098BA32 /* HomeViewModel.swift */; };
+		5B5BF47B2BD9A5960098BA32 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4332BD9A5960098BA32 /* StoryModel.swift */; };
+		5B5BF47C2BD9A5960098BA32 /* StoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4352BD9A5960098BA32 /* StoryRowView.swift */; };
+		5B5BF47D2BD9A5960098BA32 /* StoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4372BD9A5960098BA32 /* StoryViewModel.swift */; };
+		5B5BF47E2BD9A5960098BA32 /* StoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4392BD9A5960098BA32 /* StoryDetailView.swift */; };
+		5B5BF47F2BD9A5960098BA32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF43B2BD9A5960098BA32 /* HomeView.swift */; };
+		5B5BF4802BD9A5960098BA32 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF43D2BD9A5960098BA32 /* SettingsView.swift */; };
+		5B5BF4812BD9A5960098BA32 /* SignalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF43F2BD9A5960098BA32 /* SignalModel.swift */; };
+		5B5BF4822BD9A5960098BA32 /* SignalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4412BD9A5960098BA32 /* SignalRowView.swift */; };
+		5B5BF4832BD9A5960098BA32 /* SignalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4432BD9A5960098BA32 /* SignalViewModel.swift */; };
+		5B5BF4842BD9A5960098BA32 /* SignalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4452BD9A5960098BA32 /* SignalsView.swift */; };
+		5B5BF4852BD9A5960098BA32 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4472BD9A5960098BA32 /* TabBarView.swift */; };
+		5B5BF4872BD9B0BF0098BA32 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5B5BF4862BD9B0BF0098BA32 /* PrivacyInfo.xcprivacy */; };
+		5B5BF48C2BDA6EF60098BA32 /* ArchiveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF48A2BDA6EF60098BA32 /* ArchiveService.swift */; };
+		5B5BF4902BDAA10B0098BA32 /* ATTObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF48F2BDAA10B0098BA32 /* ATTObserver.swift */; };
+		5B5BF4922BDAAE2E0098BA32 /* SettingsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4912BDAAE2E0098BA32 /* SettingsButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B5BF3DC2BD9A4F30098BA32 /* FXguide&quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FXguide&quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5BF3DF2BD9A4F30098BA32 /* FXguide_quizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXguide_quizApp.swift; sourceTree = "<group>"; };
-		5B5BF3E12BD9A4F30098BA32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5B5BF3E32BD9A4F50098BA32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5BF3E62BD9A4F50098BA32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5B5BF3EE2BD9A5720098BA32 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5B5BF3F12BD9A5960098BA32 /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		5B5BF3F32BD9A5960098BA32 /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		5B5BF3F42BD9A5960098BA32 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
+		5B5BF3F82BD9A5960098BA32 /* OnboardingBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingBackgroundView.swift; sourceTree = "<group>"; };
+		5B5BF3FA2BD9A5960098BA32 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		5B5BF3FC2BD9A5960098BA32 /* DemoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF3FD2BD9A5960098BA32 /* DemoRateAppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoRateAppView.swift; sourceTree = "<group>"; };
+		5B5BF3FE2BD9A5960098BA32 /* DemoStoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoStoriesView.swift; sourceTree = "<group>"; };
+		5B5BF3FF2BD9A5960098BA32 /* NotificationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		5B5BF4002BD9A5960098BA32 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		5B5BF4032BD9A5960098BA32 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B5BF4052BD9A5960098BA32 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5B5BF4082BD9A5960098BA32 /* DepNowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepNowView.swift; sourceTree = "<group>"; };
+		5B5BF4092BD9A5960098BA32 /* DepSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepSuccessView.swift; sourceTree = "<group>"; };
+		5B5BF40A2BD9A5960098BA32 /* PushNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationView.swift; sourceTree = "<group>"; };
+		5B5BF40B2BD9A5960098BA32 /* RegNowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegNowView.swift; sourceTree = "<group>"; };
+		5B5BF40C2BD9A5960098BA32 /* RegSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegSuccessView.swift; sourceTree = "<group>"; };
+		5B5BF4122BD9A5960098BA32 /* EighthInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EighthInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF4132BD9A5960098BA32 /* EleventhInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleventhInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF4142BD9A5960098BA32 /* FifthInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF4152BD9A5960098BA32 /* FirstInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF4162BD9A5960098BA32 /* FourthInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF4172BD9A5960098BA32 /* NinthInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NinthInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF4182BD9A5960098BA32 /* SecondInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF4192BD9A5960098BA32 /* SeventhInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeventhInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF41A2BD9A5960098BA32 /* SixthInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixthInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF41B2BD9A5960098BA32 /* TenthInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenthInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF41C2BD9A5960098BA32 /* ThirdInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF41D2BD9A5960098BA32 /* ThirteenthInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirteenthInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF41E2BD9A5960098BA32 /* TwelfthInfoQuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwelfthInfoQuizView.swift; sourceTree = "<group>"; };
+		5B5BF4202BD9A5960098BA32 /* QuizModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		5B5BF4222BD9A5960098BA32 /* EighthQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EighthQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF4232BD9A5960098BA32 /* EleventhQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleventhQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF4242BD9A5960098BA32 /* FifthQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF4252BD9A5960098BA32 /* FirstQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF4262BD9A5960098BA32 /* FourthQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF4272BD9A5960098BA32 /* NinthQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NinthQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF4282BD9A5960098BA32 /* SecondQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF4292BD9A5960098BA32 /* SeventhQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeventhQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF42A2BD9A5960098BA32 /* SixthQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixthQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF42B2BD9A5960098BA32 /* TenthQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenthQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF42C2BD9A5960098BA32 /* ThirdQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF42D2BD9A5960098BA32 /* ThirteenthQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirteenthQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF42E2BD9A5960098BA32 /* TwelfthQuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwelfthQuizGameView.swift; sourceTree = "<group>"; };
+		5B5BF4302BD9A5960098BA32 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5B5BF4332BD9A5960098BA32 /* StoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
+		5B5BF4352BD9A5960098BA32 /* StoryRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryRowView.swift; sourceTree = "<group>"; };
+		5B5BF4372BD9A5960098BA32 /* StoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
+		5B5BF4392BD9A5960098BA32 /* StoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryDetailView.swift; sourceTree = "<group>"; };
+		5B5BF43B2BD9A5960098BA32 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5B5BF43D2BD9A5960098BA32 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5B5BF43F2BD9A5960098BA32 /* SignalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalModel.swift; sourceTree = "<group>"; };
+		5B5BF4412BD9A5960098BA32 /* SignalRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalRowView.swift; sourceTree = "<group>"; };
+		5B5BF4432BD9A5960098BA32 /* SignalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalViewModel.swift; sourceTree = "<group>"; };
+		5B5BF4452BD9A5960098BA32 /* SignalsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalsView.swift; sourceTree = "<group>"; };
+		5B5BF4472BD9A5960098BA32 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		5B5BF4862BD9B0BF0098BA32 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		5B5BF48A2BDA6EF60098BA32 /* ArchiveService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveService.swift; sourceTree = "<group>"; };
+		5B5BF48F2BDAA10B0098BA32 /* ATTObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATTObserver.swift; sourceTree = "<group>"; };
+		5B5BF4912BDAAE2E0098BA32 /* SettingsButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +171,11 @@
 		5B5BF3DE2BD9A4F30098BA32 /* FXguide&quiz */ = {
 			isa = PBXGroup;
 			children = (
-				5B5BF3DF2BD9A4F30098BA32 /* FXguide_quizApp.swift */,
-				5B5BF3E12BD9A4F30098BA32 /* ContentView.swift */,
-				5B5BF3E32BD9A4F50098BA32 /* Assets.xcassets */,
+				5B5BF3ED2BD9A5200098BA32 /* App */,
 				5B5BF3E52BD9A4F50098BA32 /* Preview Content */,
+				5B5BF3EF2BD9A5720098BA32 /* Extensions */,
+				5B5BF48B2BDA6EF60098BA32 /* Helper */,
+				5B5BF4492BD9A5960098BA32 /* Core */,
 			);
 			path = "FXguide&quiz";
 			sourceTree = "<group>";
@@ -65,6 +186,305 @@
 				5B5BF3E62BD9A4F50098BA32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B5BF3ED2BD9A5200098BA32 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF3E32BD9A4F50098BA32 /* Assets.xcassets */,
+				5B5BF3DF2BD9A4F30098BA32 /* FXguide_quizApp.swift */,
+				5B5BF4862BD9B0BF0098BA32 /* PrivacyInfo.xcprivacy */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5B5BF3EF2BD9A5720098BA32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF3EE2BD9A5720098BA32 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B5BF3F62BD9A5960098BA32 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4912BDAAE2E0098BA32 /* SettingsButtonView.swift */,
+				5B5BF3F12BD9A5960098BA32 /* CustomAlertView.swift */,
+				5B5BF3F32BD9A5960098BA32 /* ProgressBarView.swift */,
+				5B5BF3F42BD9A5960098BA32 /* ProgressLoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5B5BF3F72BD9A5960098BA32 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		5B5BF3F92BD9A5960098BA32 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF3F82BD9A5960098BA32 /* OnboardingBackgroundView.swift */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		5B5BF3FB2BD9A5960098BA32 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF3FA2BD9A5960098BA32 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5B5BF4012BD9A5960098BA32 /* OnboardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4002BD9A5960098BA32 /* WelcomeView.swift */,
+				5B5BF3FF2BD9A5960098BA32 /* NotificationsView.swift */,
+				5B5BF3FE2BD9A5960098BA32 /* DemoStoriesView.swift */,
+				5B5BF3FD2BD9A5960098BA32 /* DemoRateAppView.swift */,
+				5B5BF3FC2BD9A5960098BA32 /* DemoQuizView.swift */,
+			);
+			path = OnboardingViews;
+			sourceTree = "<group>";
+		};
+		5B5BF4022BD9A5960098BA32 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF3F92BD9A5960098BA32 /* Background */,
+				5B5BF3FB2BD9A5960098BA32 /* Onboarding */,
+				5B5BF4012BD9A5960098BA32 /* OnboardingViews */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5B5BF4042BD9A5960098BA32 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4032BD9A5960098BA32 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		5B5BF4062BD9A5960098BA32 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4052BD9A5960098BA32 /* LoadingView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		5B5BF4072BD9A5960098BA32 /* Preloader */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4042BD9A5960098BA32 /* Launch */,
+				5B5BF4062BD9A5960098BA32 /* Loading */,
+			);
+			path = Preloader;
+			sourceTree = "<group>";
+		};
+		5B5BF40D2BD9A5960098BA32 /* Successfull */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4082BD9A5960098BA32 /* DepNowView.swift */,
+				5B5BF4092BD9A5960098BA32 /* DepSuccessView.swift */,
+				5B5BF40A2BD9A5960098BA32 /* PushNotificationView.swift */,
+				5B5BF40B2BD9A5960098BA32 /* RegNowView.swift */,
+				5B5BF40C2BD9A5960098BA32 /* RegSuccessView.swift */,
+			);
+			path = Successfull;
+			sourceTree = "<group>";
+		};
+		5B5BF41F2BD9A5960098BA32 /* InfoOfQuizzes */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4152BD9A5960098BA32 /* FirstInfoQuizView.swift */,
+				5B5BF4182BD9A5960098BA32 /* SecondInfoQuizView.swift */,
+				5B5BF41C2BD9A5960098BA32 /* ThirdInfoQuizView.swift */,
+				5B5BF4162BD9A5960098BA32 /* FourthInfoQuizView.swift */,
+				5B5BF4142BD9A5960098BA32 /* FifthInfoQuizView.swift */,
+				5B5BF41A2BD9A5960098BA32 /* SixthInfoQuizView.swift */,
+				5B5BF4192BD9A5960098BA32 /* SeventhInfoQuizView.swift */,
+				5B5BF4122BD9A5960098BA32 /* EighthInfoQuizView.swift */,
+				5B5BF4172BD9A5960098BA32 /* NinthInfoQuizView.swift */,
+				5B5BF41B2BD9A5960098BA32 /* TenthInfoQuizView.swift */,
+				5B5BF4132BD9A5960098BA32 /* EleventhInfoQuizView.swift */,
+				5B5BF41E2BD9A5960098BA32 /* TwelfthInfoQuizView.swift */,
+				5B5BF41D2BD9A5960098BA32 /* ThirteenthInfoQuizView.swift */,
+			);
+			path = InfoOfQuizzes;
+			sourceTree = "<group>";
+		};
+		5B5BF4212BD9A5960098BA32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4202BD9A5960098BA32 /* QuizModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B5BF42F2BD9A5960098BA32 /* QuizGames */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4252BD9A5960098BA32 /* FirstQuizGameView.swift */,
+				5B5BF4282BD9A5960098BA32 /* SecondQuizGameView.swift */,
+				5B5BF42C2BD9A5960098BA32 /* ThirdQuizGameView.swift */,
+				5B5BF4262BD9A5960098BA32 /* FourthQuizGameView.swift */,
+				5B5BF4242BD9A5960098BA32 /* FifthQuizGameView.swift */,
+				5B5BF42A2BD9A5960098BA32 /* SixthQuizGameView.swift */,
+				5B5BF4292BD9A5960098BA32 /* SeventhQuizGameView.swift */,
+				5B5BF4222BD9A5960098BA32 /* EighthQuizGameView.swift */,
+				5B5BF4272BD9A5960098BA32 /* NinthQuizGameView.swift */,
+				5B5BF42B2BD9A5960098BA32 /* TenthQuizGameView.swift */,
+				5B5BF4232BD9A5960098BA32 /* EleventhQuizGameView.swift */,
+				5B5BF42E2BD9A5960098BA32 /* TwelfthQuizGameView.swift */,
+				5B5BF42D2BD9A5960098BA32 /* ThirteenthQuizGameView.swift */,
+			);
+			path = QuizGames;
+			sourceTree = "<group>";
+		};
+		5B5BF4312BD9A5960098BA32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4302BD9A5960098BA32 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B5BF4322BD9A5960098BA32 /* Quizzes */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4212BD9A5960098BA32 /* Model */,
+				5B5BF4312BD9A5960098BA32 /* ViewModel */,
+				5B5BF41F2BD9A5960098BA32 /* InfoOfQuizzes */,
+				5B5BF42F2BD9A5960098BA32 /* QuizGames */,
+			);
+			path = Quizzes;
+			sourceTree = "<group>";
+		};
+		5B5BF4342BD9A5960098BA32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4332BD9A5960098BA32 /* StoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B5BF4362BD9A5960098BA32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4352BD9A5960098BA32 /* StoryRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B5BF4382BD9A5960098BA32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4372BD9A5960098BA32 /* StoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B5BF43A2BD9A5960098BA32 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4392BD9A5960098BA32 /* StoryDetailView.swift */,
+				5B5BF4342BD9A5960098BA32 /* Model */,
+				5B5BF4362BD9A5960098BA32 /* View */,
+				5B5BF4382BD9A5960098BA32 /* ViewModel */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		5B5BF43C2BD9A5960098BA32 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF43B2BD9A5960098BA32 /* HomeView.swift */,
+				5B5BF43A2BD9A5960098BA32 /* Stories */,
+				5B5BF4322BD9A5960098BA32 /* Quizzes */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		5B5BF43E2BD9A5960098BA32 /* SettingsTab */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF43D2BD9A5960098BA32 /* SettingsView.swift */,
+			);
+			path = SettingsTab;
+			sourceTree = "<group>";
+		};
+		5B5BF4402BD9A5960098BA32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF43F2BD9A5960098BA32 /* SignalModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B5BF4422BD9A5960098BA32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4412BD9A5960098BA32 /* SignalRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B5BF4442BD9A5960098BA32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4432BD9A5960098BA32 /* SignalViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B5BF4462BD9A5960098BA32 /* SignalsTab */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4452BD9A5960098BA32 /* SignalsView.swift */,
+				5B5BF4402BD9A5960098BA32 /* Model */,
+				5B5BF4422BD9A5960098BA32 /* View */,
+				5B5BF4442BD9A5960098BA32 /* ViewModel */,
+			);
+			path = SignalsTab;
+			sourceTree = "<group>";
+		};
+		5B5BF4482BD9A5960098BA32 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF4472BD9A5960098BA32 /* TabBarView.swift */,
+				5B5BF43C2BD9A5960098BA32 /* HomeTab */,
+				5B5BF4462BD9A5960098BA32 /* SignalsTab */,
+				5B5BF43E2BD9A5960098BA32 /* SettingsTab */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		5B5BF4492BD9A5960098BA32 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF3F62BD9A5960098BA32 /* Components */,
+				5B5BF4072BD9A5960098BA32 /* Preloader */,
+				5B5BF4022BD9A5960098BA32 /* Main */,
+				5B5BF4482BD9A5960098BA32 /* TabBarView */,
+				5B5BF40D2BD9A5960098BA32 /* Successfull */,
+				5B5BF3F72BD9A5960098BA32 /* Localizable */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5B5BF48B2BDA6EF60098BA32 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BF48F2BDAA10B0098BA32 /* ATTObserver.swift */,
+				5B5BF48A2BDA6EF60098BA32 /* ArchiveService.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +545,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5BF4562BD9A5960098BA32 /* LaunchScreen.storyboard in Resources */,
 				5B5BF3E72BD9A4F50098BA32 /* Preview Assets.xcassets in Resources */,
+				5B5BF4872BD9B0BF0098BA32 /* PrivacyInfo.xcprivacy in Resources */,
 				5B5BF3E42BD9A4F50098BA32 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +559,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5BF3E22BD9A4F30098BA32 /* ContentView.swift in Sources */,
+				5B5BF4522BD9A5960098BA32 /* DemoRateAppView.swift in Sources */,
+				5B5BF4532BD9A5960098BA32 /* DemoStoriesView.swift in Sources */,
+				5B5BF47A2BD9A5960098BA32 /* HomeViewModel.swift in Sources */,
+				5B5BF4742BD9A5960098BA32 /* SeventhQuizGameView.swift in Sources */,
+				5B5BF4592BD9A5960098BA32 /* DepSuccessView.swift in Sources */,
+				5B5BF46C2BD9A5960098BA32 /* QuizModel.swift in Sources */,
+				5B5BF45B2BD9A5960098BA32 /* RegNowView.swift in Sources */,
+				5B5BF4762BD9A5960098BA32 /* TenthQuizGameView.swift in Sources */,
+				5B5BF4682BD9A5960098BA32 /* TenthInfoQuizView.swift in Sources */,
+				5B5BF46D2BD9A5960098BA32 /* EighthQuizGameView.swift in Sources */,
+				5B5BF4582BD9A5960098BA32 /* DepNowView.swift in Sources */,
+				5B5BF44A2BD9A5960098BA32 /* CustomAlertView.swift in Sources */,
+				5B5BF4732BD9A5960098BA32 /* SecondQuizGameView.swift in Sources */,
 				5B5BF3E02BD9A4F30098BA32 /* FXguide_quizApp.swift in Sources */,
+				5B5BF45A2BD9A5960098BA32 /* PushNotificationView.swift in Sources */,
+				5B5BF45F2BD9A5960098BA32 /* EighthInfoQuizView.swift in Sources */,
+				5B5BF4642BD9A5960098BA32 /* NinthInfoQuizView.swift in Sources */,
+				5B5BF45C2BD9A5960098BA32 /* RegSuccessView.swift in Sources */,
+				5B5BF48C2BDA6EF60098BA32 /* ArchiveService.swift in Sources */,
+				5B5BF4702BD9A5960098BA32 /* FirstQuizGameView.swift in Sources */,
+				5B5BF4902BDAA10B0098BA32 /* ATTObserver.swift in Sources */,
+				5B5BF4832BD9A5960098BA32 /* SignalViewModel.swift in Sources */,
+				5B5BF4712BD9A5960098BA32 /* FourthQuizGameView.swift in Sources */,
+				5B5BF4852BD9A5960098BA32 /* TabBarView.swift in Sources */,
+				5B5BF4652BD9A5960098BA32 /* SecondInfoQuizView.swift in Sources */,
+				5B5BF46A2BD9A5960098BA32 /* ThirteenthInfoQuizView.swift in Sources */,
+				5B5BF4722BD9A5960098BA32 /* NinthQuizGameView.swift in Sources */,
+				5B5BF47B2BD9A5960098BA32 /* StoryModel.swift in Sources */,
+				5B5BF4502BD9A5960098BA32 /* OnboardingView.swift in Sources */,
+				5B5BF46E2BD9A5960098BA32 /* EleventhQuizGameView.swift in Sources */,
+				5B5BF4692BD9A5960098BA32 /* ThirdInfoQuizView.swift in Sources */,
+				5B5BF3F02BD9A5720098BA32 /* Color.swift in Sources */,
+				5B5BF4772BD9A5960098BA32 /* ThirdQuizGameView.swift in Sources */,
+				5B5BF46B2BD9A5960098BA32 /* TwelfthInfoQuizView.swift in Sources */,
+				5B5BF4632BD9A5960098BA32 /* FourthInfoQuizView.swift in Sources */,
+				5B5BF4602BD9A5960098BA32 /* EleventhInfoQuizView.swift in Sources */,
+				5B5BF4572BD9A5960098BA32 /* LoadingView.swift in Sources */,
+				5B5BF4612BD9A5960098BA32 /* FifthInfoQuizView.swift in Sources */,
+				5B5BF47F2BD9A5960098BA32 /* HomeView.swift in Sources */,
+				5B5BF4782BD9A5960098BA32 /* ThirteenthQuizGameView.swift in Sources */,
+				5B5BF4512BD9A5960098BA32 /* DemoQuizView.swift in Sources */,
+				5B5BF44D2BD9A5960098BA32 /* ProgressLoadingView.swift in Sources */,
+				5B5BF4922BDAAE2E0098BA32 /* SettingsButtonView.swift in Sources */,
+				5B5BF47D2BD9A5960098BA32 /* StoryViewModel.swift in Sources */,
+				5B5BF4542BD9A5960098BA32 /* NotificationsView.swift in Sources */,
+				5B5BF4792BD9A5960098BA32 /* TwelfthQuizGameView.swift in Sources */,
+				5B5BF46F2BD9A5960098BA32 /* FifthQuizGameView.swift in Sources */,
+				5B5BF47E2BD9A5960098BA32 /* StoryDetailView.swift in Sources */,
+				5B5BF4842BD9A5960098BA32 /* SignalsView.swift in Sources */,
+				5B5BF44C2BD9A5960098BA32 /* ProgressBarView.swift in Sources */,
+				5B5BF47C2BD9A5960098BA32 /* StoryRowView.swift in Sources */,
+				5B5BF4822BD9A5960098BA32 /* SignalRowView.swift in Sources */,
+				5B5BF4802BD9A5960098BA32 /* SettingsView.swift in Sources */,
+				5B5BF44F2BD9A5960098BA32 /* OnboardingBackgroundView.swift in Sources */,
+				5B5BF4672BD9A5960098BA32 /* SixthInfoQuizView.swift in Sources */,
+				5B5BF4662BD9A5960098BA32 /* SeventhInfoQuizView.swift in Sources */,
+				5B5BF4622BD9A5960098BA32 /* FirstInfoQuizView.swift in Sources */,
+				5B5BF4552BD9A5960098BA32 /* WelcomeView.swift in Sources */,
+				5B5BF4812BD9A5960098BA32 /* SignalModel.swift in Sources */,
+				5B5BF4752BD9A5960098BA32 /* SixthQuizGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +677,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +734,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -269,17 +749,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FXguide&quiz/Preview Content\"";
 				DEVELOPMENT_TEAM = 695W8CRMKH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "FXguide&quiz";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is needed for the funnel of geolocation of users and search for the target audience";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your data will be used to deliver personalise ads to you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +774,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AtaevAleksandr.FXguide-quiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,17 +789,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FXguide&quiz/Preview Content\"";
 				DEVELOPMENT_TEAM = 695W8CRMKH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "FXguide&quiz";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is needed for the funnel of geolocation of users and search for the target audience";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your data will be used to deliver personalise ads to you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +814,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AtaevAleksandr.FXguide-quiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
