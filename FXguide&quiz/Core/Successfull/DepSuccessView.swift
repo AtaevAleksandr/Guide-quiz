@@ -13,7 +13,7 @@ struct DepSuccessView: View {
 
     var body: some View {
         ZStack {
-            OnboardingBackgroundView().ignoresSafeArea()
+            OnboardingBackgroundView()
 
             VStack {
                 Spacer()
@@ -21,7 +21,7 @@ struct DepSuccessView: View {
                 Image(.depComplete)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 111, height: 111)
+                    .frame(width: 77, height: 77)
 
                 Text("Your first deposit was successful")
                     .font(.system(size: 24, weight: .bold))
@@ -45,7 +45,7 @@ extension DepSuccessView {
         } label: {
             Text("Next")
                 .font(.system(size: 16, weight: .semibold))
-                .foregroundStyle(.white)
+                .foregroundStyle(.black)
                 .frame(height: 53)
                 .frame(maxWidth: .infinity)
                 .background(Color.theme.customGreen)

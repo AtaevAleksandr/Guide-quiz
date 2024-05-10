@@ -29,7 +29,8 @@ struct ProgressLoadingView: View {
                             .scaleEffect(x: 1, y: 4, anchor: .center)
                             .background(Color.white)
                             .clipShape(Capsule())
-                            .position(x: geometry.size.width / 2, y: geometry.size.height - 280)
+                            .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                            .offset(y: 100)
                     )
             }
         }

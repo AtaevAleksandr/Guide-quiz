@@ -27,7 +27,7 @@ struct DemoQuizView: View {
 
             Spacer()
         }
-        .padding(.horizontal)
+        .padding()
         .clipped()
     }
 }

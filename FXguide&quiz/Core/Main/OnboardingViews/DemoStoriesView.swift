@@ -14,20 +14,19 @@ struct DemoStoriesView: View {
                 .font(.system(size: 24, weight: .bold))
                 .foregroundStyle(.white)
                 .multilineTextAlignment(.center)
-                .padding(.horizontal)
 
             Text("Stories will help you keep up to date with all market events")
                 .font(.system(size: 16, weight: .semibold))
                 .foregroundStyle(Color.theme.customGray)
                 .multilineTextAlignment(.center)
                 .padding(.top, 12)
-                .padding(.horizontal)
 
             phone
-                .padding(.top, 55)
+                .padding(.top, 40)
 
             Spacer()
         }
+        .padding()
         .clipped()
     }
 }

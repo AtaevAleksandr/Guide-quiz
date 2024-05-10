@@ -13,7 +13,7 @@ struct PushNotificationView: View {
 
     var body: some View {
         ZStack {
-            OnboardingBackgroundView().ignoresSafeArea()
+            OnboardingBackgroundView()
 
             VStack {
                 Spacer()
@@ -21,14 +21,15 @@ struct PushNotificationView: View {
                 Image(.pushNow)
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 128)
+                    .padding(.bottom, -100)
+                    .padding(.horizontal)
+                    .padding(.top, 80)
 
                 VStack(spacing: 5) {
                     Text("Don't miss your chance to make money!")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundStyle(.white)
                         .multilineTextAlignment(.center)
-                        .padding(.top, 29)
 
                     Text("Turn on push notifications for more efficient use of push notifications")
                         .font(.system(size: 15, weight: .regular))
@@ -61,7 +62,7 @@ extension PushNotificationView {
         } label: {
             Text("Next")
                 .font(.system(size: 16, weight: .semibold))
-                .foregroundStyle(.white)
+                .foregroundStyle(.black)
                 .frame(height: 53)
                 .frame(maxWidth: .infinity)
                 .background(Color.theme.customGreen)

@@ -54,7 +54,7 @@ struct SignalRowView: View {
 }
 
 #Preview {
-    SignalsView()
+    SignalRowView(signal: SignalModel(iconImage: "AUD:USD", name: "AUD/USD", arrowStatus: .randomStatus(), currentTime: "23:43"))
         .environmentObject(SignalViewModel())
 }
 

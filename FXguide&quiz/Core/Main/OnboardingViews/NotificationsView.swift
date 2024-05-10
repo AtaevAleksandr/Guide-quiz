@@ -20,7 +20,11 @@ struct NotificationsView: View {
                 .foregroundStyle(.white)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
+                .padding(.top, -90)
+
+            Spacer()
         }
+        .padding(.top, 120)
         .clipped()
     }
 }

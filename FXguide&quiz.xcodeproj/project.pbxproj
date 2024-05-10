@@ -68,7 +68,6 @@
 		5B5BF4842BD9A5960098BA32 /* SignalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4452BD9A5960098BA32 /* SignalsView.swift */; };
 		5B5BF4852BD9A5960098BA32 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4472BD9A5960098BA32 /* TabBarView.swift */; };
 		5B5BF4872BD9B0BF0098BA32 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5B5BF4862BD9B0BF0098BA32 /* PrivacyInfo.xcprivacy */; };
-		5B5BF48C2BDA6EF60098BA32 /* ArchiveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF48A2BDA6EF60098BA32 /* ArchiveService.swift */; };
 		5B5BF4902BDAA10B0098BA32 /* ATTObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF48F2BDAA10B0098BA32 /* ATTObserver.swift */; };
 		5B5BF4922BDAAE2E0098BA32 /* SettingsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BF4912BDAAE2E0098BA32 /* SettingsButtonView.swift */; };
 /* End PBXBuildFile section */
@@ -136,7 +135,6 @@
 		5B5BF4452BD9A5960098BA32 /* SignalsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalsView.swift; sourceTree = "<group>"; };
 		5B5BF4472BD9A5960098BA32 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		5B5BF4862BD9B0BF0098BA32 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		5B5BF48A2BDA6EF60098BA32 /* ArchiveService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveService.swift; sourceTree = "<group>"; };
 		5B5BF48F2BDAA10B0098BA32 /* ATTObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATTObserver.swift; sourceTree = "<group>"; };
 		5B5BF4912BDAAE2E0098BA32 /* SettingsButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -290,11 +288,11 @@
 		5B5BF40D2BD9A5960098BA32 /* Successfull */ = {
 			isa = PBXGroup;
 			children = (
-				5B5BF4082BD9A5960098BA32 /* DepNowView.swift */,
+				5B5BF40C2BD9A5960098BA32 /* RegSuccessView.swift */,
 				5B5BF4092BD9A5960098BA32 /* DepSuccessView.swift */,
 				5B5BF40A2BD9A5960098BA32 /* PushNotificationView.swift */,
 				5B5BF40B2BD9A5960098BA32 /* RegNowView.swift */,
-				5B5BF40C2BD9A5960098BA32 /* RegSuccessView.swift */,
+				5B5BF4082BD9A5960098BA32 /* DepNowView.swift */,
 			);
 			path = Successfull;
 			sourceTree = "<group>";
@@ -359,7 +357,6 @@
 			isa = PBXGroup;
 			children = (
 				5B5BF4212BD9A5960098BA32 /* Model */,
-				5B5BF4312BD9A5960098BA32 /* ViewModel */,
 				5B5BF41F2BD9A5960098BA32 /* InfoOfQuizzes */,
 				5B5BF42F2BD9A5960098BA32 /* QuizGames */,
 			);
@@ -405,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				5B5BF43B2BD9A5960098BA32 /* HomeView.swift */,
+				5B5BF4312BD9A5960098BA32 /* ViewModel */,
 				5B5BF43A2BD9A5960098BA32 /* Stories */,
 				5B5BF4322BD9A5960098BA32 /* Quizzes */,
 			);
@@ -482,7 +480,6 @@
 			isa = PBXGroup;
 			children = (
 				5B5BF48F2BDAA10B0098BA32 /* ATTObserver.swift */,
-				5B5BF48A2BDA6EF60098BA32 /* ArchiveService.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -577,7 +574,6 @@
 				5B5BF45F2BD9A5960098BA32 /* EighthInfoQuizView.swift in Sources */,
 				5B5BF4642BD9A5960098BA32 /* NinthInfoQuizView.swift in Sources */,
 				5B5BF45C2BD9A5960098BA32 /* RegSuccessView.swift in Sources */,
-				5B5BF48C2BDA6EF60098BA32 /* ArchiveService.swift in Sources */,
 				5B5BF4702BD9A5960098BA32 /* FirstQuizGameView.swift in Sources */,
 				5B5BF4902BDAA10B0098BA32 /* ATTObserver.swift in Sources */,
 				5B5BF4832BD9A5960098BA32 /* SignalViewModel.swift in Sources */,

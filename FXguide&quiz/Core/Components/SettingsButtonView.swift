@@ -19,11 +19,17 @@ struct SettingsButtonView: View {
             Text(LocalizedStringKey(title))
                 .font(.system(size: 20, weight: .semibold))
                 .foregroundStyle(.black)
+                .frame(maxWidth: .infinity)
+                .frame(height: 60)
+                .foregroundStyle(.white)
+                .background(Color.theme.customGreen)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
         }
-        .frame(maxWidth: .infinity)
-        .frame(height: 60)
-        .foregroundStyle(.white)
-        .background(Color.theme.customGreen)
-        .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
+}
+
+#Preview {
+    SettingsButtonView(title: "gdf") {
+
     }
 }

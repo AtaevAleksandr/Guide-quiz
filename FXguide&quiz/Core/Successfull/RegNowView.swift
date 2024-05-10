@@ -13,7 +13,7 @@ struct RegNowView: View {
     
     var body: some View {
         ZStack {
-            OnboardingBackgroundView().ignoresSafeArea()
+            OnboardingBackgroundView()
 
             VStack {
                 HStack {
@@ -26,13 +26,14 @@ struct RegNowView: View {
                 }
                 .font(.system(size: 24, weight: .bold))
                 .foregroundStyle(.white)
-                .padding()
+                .padding(.top)
+                .padding(.horizontal)
 
-                Image("RegNow")
+                Image(.regNow)
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 402)
-                    .padding(.top, 30)
+                    .padding(.top, 50)
+                    .padding(.horizontal)
 
                 Spacer()
                 bottomButton

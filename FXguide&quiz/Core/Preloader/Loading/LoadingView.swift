@@ -34,6 +34,9 @@ struct LoadingView: View {
         .onReceive(timer) { _ in
             fakeStartLoading()
         }
+        .onAppear {
+            fakeStartLoading()
+        }
     }
 
     //MARK: Functions
@@ -45,7 +48,7 @@ struct LoadingView: View {
             self.isInitialLoadingCompleted = true
             self.timer.upstream.connect().cancel()
         } else if progress < 100 {
-            progress = min(progress + CGFloat.random(in: 0.2...0.4), 100)
+            progress = min(progress + CGFloat(0.6), 100)
         }
     }
 }

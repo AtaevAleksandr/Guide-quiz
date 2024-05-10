@@ -28,7 +28,7 @@ struct DemoRateAppView: View {
             Spacer()
         }
         .clipped()
-        .padding(.horizontal)
+        .padding()
     }
 }
 

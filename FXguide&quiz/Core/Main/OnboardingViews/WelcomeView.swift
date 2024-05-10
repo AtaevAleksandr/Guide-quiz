@@ -37,7 +37,7 @@ struct WelcomeView: View {
 
             Spacer()
         }
-        .padding(.horizontal)
+        .padding()
         .clipped()
     }
 }

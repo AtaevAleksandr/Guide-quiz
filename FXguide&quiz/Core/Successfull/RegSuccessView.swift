@@ -13,7 +13,7 @@ struct RegSuccessView: View {
 
     var body: some View {
         ZStack {
-            OnboardingBackgroundView().ignoresSafeArea()
+            OnboardingBackgroundView()
 
             VStack {
                 Spacer()
@@ -21,7 +21,7 @@ struct RegSuccessView: View {
                 Image(.regComplete)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 111, height: 111)
+                    .frame(width: 77, height: 77)
 
                 Text("Registration completed")
                     .font(.system(size: 24, weight: .bold))

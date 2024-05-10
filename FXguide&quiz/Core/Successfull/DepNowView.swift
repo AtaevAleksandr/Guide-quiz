@@ -13,7 +13,7 @@ struct DepNowView: View {
     
     var body: some View {
         ZStack {
-            OnboardingBackgroundView().ignoresSafeArea()
+            OnboardingBackgroundView()
 
             VStack {
                 Spacer()
@@ -28,6 +28,7 @@ struct DepNowView: View {
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.white)
                     .padding(.top, 26)
+                    .padding(.horizontal)
 
                 Spacer()
                 bottomButton

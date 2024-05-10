@@ -11,16 +11,6 @@ struct SignalsView: View {
 
     @EnvironmentObject private var viewModel: SignalViewModel
 
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
-    @State private var timeRemaining: String = ""
-
-    @State private var nextUpdateTime: Date = {
-        let calendar = Calendar.current
-        let endTime = calendar.date(byAdding: .second, value: 300, to: Date()) ?? Date()
-        return endTime
-    }()
-
     var body: some View {
         NavigationView {
             ZStack {
@@ -33,56 +23,26 @@ struct SignalsView: View {
                                 .font(.system(size: 18, weight: .bold))
                                 .foregroundStyle(Color.theme.customGray)
 
-                            Text("\(timeRemaining)")
+                            Text("\(viewModel.remainTime)")
                                 .font(.system(size: 32, weight: .bold))
                                 .foregroundStyle(.white)
                                 .padding(10)
                                 .background(Color.theme.backgroundComponents)
                                 .clipShape(RoundedRectangle(cornerRadius: 8))
                         }
-                        .frame(height: geo.size.height / 2)
+                        .frame(height: geo.size.height / 5)
 
-                        randomSignals
+                        ForEach(viewModel.randomSignals) { signal in
+                            SignalRowView(signal: signal)
+                        }
                     }
                 }
-                .padding(.horizontal)
-            }
-            .onReceive(timer) { _ in
-                withAnimation(.linear(duration: 0.5)) {
-                    DispatchQueue.main.async {
-                        updateTimeRemaining()
-                    }
-                }
-            }
-            .onAppear {
-                withAnimation(.linear(duration: 0.5)) {
-                    DispatchQueue.main.async {
-                        updateTimeRemaining()
-                    }
-                }
+                .padding()
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { title }
         }
         .navigationViewStyle(.stack)
-    }
-
-    //MARK: FUNCTIONS
-    func updateTimeRemaining() {
-        let currentTime = Date()
-        let calendar = Calendar.current
-
-        if currentTime >= nextUpdateTime {
-            nextUpdateTime = calendar.date(byAdding: .second, value: 300, to: Date()) ?? Date()
-            DispatchQueue.main.async {
-                viewModel.generateFiveRandomSignals()
-            }
-        }
-
-        let remaining = calendar.dateComponents([.minute, .second], from: currentTime, to: nextUpdateTime)
-        if let minute = remaining.minute, let second = remaining.second {
-            timeRemaining = String(format: "%02d:%02d", minute, second)
-        }
     }
 }
 
@@ -93,12 +53,6 @@ extension SignalsView {
             Text("Signals")
                 .font(.system(size: 24, weight: .bold))
                 .foregroundStyle(.white)
-        }
-    }
-
-    private var randomSignals: some View {
-        ForEach(viewModel.allSignals.prefix(7)) { signal in
-            SignalRowView(signal: signal)
         }
     }
 }
