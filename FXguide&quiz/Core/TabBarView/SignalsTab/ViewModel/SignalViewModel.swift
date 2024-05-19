@@ -49,13 +49,13 @@ final class SignalViewModel: ObservableObject {
 
     private func createTimer() {
         let calendar = Calendar.current
-        updateTime = calendar.date(byAdding: .second, value: 20, to: Date()) ?? Date()
+        updateTime = calendar.date(byAdding: .minute, value: 720, to: Date()) ?? Date()
 
         let timer = Timer(timeInterval: 1, repeats: true) { timer in
             self.remainTime = self.updateTimeRemaining()
-            if self.remainTime == "00:00:00" {
+            if self.remainTime == "00:00" {
                 self.generateRandomSignals()
-                self.updateTime = calendar.date(byAdding: .second, value: 20, to: Date()) ?? Date()
+                self.updateTime = calendar.date(byAdding: .minute, value: 720, to: Date()) ?? Date()
             }
         }
         RunLoop.main.add(timer, forMode: .common)
@@ -68,7 +68,7 @@ final class SignalViewModel: ObservableObject {
     func createTimerFromBackground() {
         timerFromBack = Timer(timeInterval: 1, repeats: true) { timer in
             self.remainTime = self.updateTimeRemaining()
-            if self.remainTime == "00:00:00" {
+            if self.remainTime == "00:00" {
                 self.createTimer()
             }
         }
@@ -81,9 +81,9 @@ final class SignalViewModel: ObservableObject {
         let currentTime = Date()
         let calendar = Calendar.current
 
-        let remaining = calendar.dateComponents([.hour, .minute, .second], from: currentTime, to: updateTime)
-        if let hour = remaining.hour, let minute = remaining.minute, let second = remaining.second {
-            return String(format: "%02d:%02d:%02d", max(0, hour), max(0, minute), max(0, second))
+        let remaining = calendar.dateComponents([.hour, .minute], from: currentTime, to: updateTime)
+        if let hour = remaining.hour, let minute = remaining.minute {
+            return String(format: "%02d:%02d", max(0, hour), max(0, minute))
         }
 
         return ""
